@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css"/>
+    <script src="JS/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/crud.js"></script>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <form class="border p-4 mt-4 shadow-sm" id="contactForm">
+            <div class="form-group">
+                <label for="name"> Name </label>
+                <input 
+                    class="form-control"
+                    id="name"
+                    type="text"  
+                    placeholder="Enter Name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="Phone"> Phone </label>
+                <input 
+                    class="form-control"
+                    id="phone"
+                    type="tel"  
+                    placeholder="Enter Phone Number"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email"> Email </label>
+                <input 
+                    class="form-control"
+                    id="email"
+                    type="email"  
+                    placeholder="Enter Email"
+                    required
+                >
+            </div>
+           
+            <div class="d-grid gap-2 col-12 mx-auto">
+                <button id="add-btn" type="submit" class="btn btn-success add-btn"> Save </button>
+            </div>
+
+        </form>
+        <br>
+        <table id="contactTable" class="table table-dark table-striped-columns mx-auto">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- Contacts will be appended here -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
